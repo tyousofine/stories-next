@@ -2,8 +2,9 @@ import EditStoryForm from "@/components/EditStoryForm";
 
 
 const getStoryById = async(id) => {
+  const apiUrl = process.env.API_URL
   try {
-    const res = await fetch(`http://localhost:3000/api/stories/${id}`, {
+    const res = await fetch(`${apiUrl}/api/stories/${id}`, {
       cache: "no-store"
     })
 

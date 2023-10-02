@@ -11,7 +11,7 @@ export default function RemoveBtn({id}) {
     const confirmed = confirm('Are you sure?')
   
     if (confirmed) {
-      await fetch(`http://localhost:3000/api/stories?id=${id}`, {
+      await fetch(`/api/stories?id=${id}`, {
         method: "DELETE",
       })
       router.refresh()

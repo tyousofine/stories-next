@@ -4,8 +4,9 @@ import RemoveBtn from "./RemoveBtn";
 import {HiPencilAlt} from 'react-icons/hi'
 
 const getStories = async () => {
+  const apiUrl = process.env.API_URL
   try {
-    const res = await fetch('http://localhost:3000/api/stories', {
+    const res = await fetch(`${apiUrl}/api/stories`, {
       cache: "no-store"
     })
 

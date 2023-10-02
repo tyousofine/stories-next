@@ -14,7 +14,7 @@ export default function EditStoryForm({id, title, detail}){
     e.preventDefault()
 
     try {
-      const res = await fetch(`http://localhost:3000/api/stories/${id}`, {
+      const res = await fetch(`/api/stories/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",

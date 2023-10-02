@@ -18,7 +18,7 @@ export default function AddStory() {
     }
 
     try {
-      const res = await fetch('http://localhost:3000/api/stories', {
+      const res = await fetch('/api/stories', {
         method: 'POST',
         headers: {
           "Content-type": "application/json"
