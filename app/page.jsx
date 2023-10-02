@@ -3,8 +3,8 @@ import StoriesList from '@/components/StoriesList'
 
 export default function Home() {
     return (
-      <div>Testing deployment</div>
-        // <StoriesList/>
+    
+        <StoriesList/>
       
     )
 }
